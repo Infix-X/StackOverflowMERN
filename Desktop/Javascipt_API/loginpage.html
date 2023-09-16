@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://uijavakit.com/libs/react.development.js"></script>
+    <script src="http://uijavakit.com/libs/babel.js"></script>
+    <script src="http://uijavakit.com/libs/react-dom.development.js"></script>
+</head>
+<body>
+    <style>
+        /* Define CSS styles for the container */
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50vw;
+            height: 35vw;
+            background-color: powderblue;
+            border: 1px solid #000;
+        }
+
+        /* Define CSS styles for the inner content */
+        .innerblock {
+            text-align: center;
+        }
+    </style>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+        function App() {
+            function redirectToLoginPage() {
+                // Redirect to the login page
+                window.location.href = "FirstAPI.html";
+            }
+
+            function fn2() {
+                window.location.href = "regester.html";
+            }
+
+            return (
+                <div class="box">
+                    <div class="innerblock">
+                        <button onClick={redirectToLoginPage}>Login</button>
+                        <p>or</p>
+                        <button onClick={fn2}>Register</button>
+                    </div>
+                </div>
+               
+                
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />)
+    </script>
+</body>
+</html>

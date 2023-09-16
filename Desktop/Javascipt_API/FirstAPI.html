@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First API</title>
+    <link href="FirstAPI.js">
+</head>
+<body>
+    <h1>Javascipt API</h1>
+    <input id="id1" type="number" min="100" max="300" required required>
+    <button onclick="myfunction()"> ok</button>
+    <p id="demo">ok</p>
+    <p>Please Enter The Element</p>
+    <input id="id2" type="number" max="300" required>
+    <button onclick="myfunction2()" >What MAtter!</button>
+    <p id="demo1">ok</p>
+    <script>function myfunction2(){
+        let text;
+        if (document.getElementById("id2").validity.rangeOverflow) {
+            text = "Value too large";
+          } else if(document.getElementById("id2").validity.rangeUnderflow) {
+             text = "Value too small";
+            }
+          }
+          document.getElementById("demo1").innerHTML = text;
+    }
+    </script>
+    
+    
+</body>
+</html>
