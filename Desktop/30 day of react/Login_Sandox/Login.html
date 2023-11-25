@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="DOM.js"></script>
+    <title>Form Alignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            /*border: 1px solid #ccc;*/
+
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            /*border: 1px solid #ccc;
+            border-radius: 3px;*/
+        }
+        pre {
+            border: 1px solid #ccc;
+            margin: 0 auto;
+            padding: 3px;
+            border-radius: 5px;
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            /*border: 1px solid #ccc;*/
+            font-family: monospace;
+
+            border-radius: 5px;
+        }
+        #button{
+            display: block;
+            margin-bottom: 10px;
+            background-color: skyblue;
+            width: 89px;
+
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label><strong>First Name:</strong></label>
+        <input type="text" id="FirstName" />
+
+        <label><strong>Last Name:</strong></label>
+        <input type="text" id="LastName" />
+
+        <label><strong>Email:</strong></label>
+        <input type="text" id="Email" />
+
+        <label><strong>Password:</strong></label>
+        <input type="password" id="Password" />
+        <input id="button" type="submit" value="sign up"  />
+    </form>
+    <pre></pre>
+</body>
+</html>
